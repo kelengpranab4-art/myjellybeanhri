@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Custom smooth transitions */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070814;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b1646;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d95d7e;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(18, 14, 38, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(22, 17, 48, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(242, 167, 184, 0.2);
+  box-shadow: 0 10px 40px -10px rgba(217, 93, 126, 0.15);
+}
+
+/* Vintage parchment texture */
+.parchment-card {
+  background-color: #fbf8f0;
+  background-image: 
+    radial-gradient(#d6c7ab 0.75px, transparent 0.75px),
+    radial-gradient(#dfd4bc 0.75px, #fbf8f0 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  color: #3b2f2f;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0,0.07), 
+    0 4px 12px rgba(0,0,0,0.15), 
+    0 15px 35px -5px rgba(0,0,0,0.3),
+    inset 0 0 40px rgba(180, 150, 110, 0.15);
+}
+
+.parchment-border {
+  border: 1px solid rgba(180, 150, 110, 0.35);
+}
+
+/* Twilight ambient gradient backdrop */
+.twilight-bg {
+  background: radial-gradient(circle at 50% 20%, #20133b 0%, #100e2a 45%, #070814 100%);
+}
+
+.twilight-glow {
+  background: radial-gradient(circle, rgba(231, 133, 157, 0.18) 0%, rgba(139, 99, 244, 0.08) 40%, transparent 70%);
+}
+
+/* Equalizer audio bar animation */
+@keyframes barBounce {
+  0%, 100% { height: 4px; }
+  50% { height: 18px; }
+}
+
+.animate-bar-1 { animation: barBounce 1s ease-in-out infinite; }
+.animate-bar-2 { animation: barBounce 1.2s ease-in-out infinite 0.2s; }
+.animate-bar-3 { animation: barBounce 0.8s ease-in-out infinite 0.4s; }
+.animate-bar-4 { animation: barBounce 1.1s ease-in-out infinite 0.1s; }
+
+/* Wax seal styling */
+.wax-seal {
+  background: radial-gradient(circle at 35% 35%, #e11d48, #9f1239, #4c0519);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
