@@ -58,8 +58,11 @@ export const Hero = ({ onEnter }) => {
           className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.15]"
         >
           A Little Something{' '}
-          <span className="font-script text-5xl sm:text-7xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-dustypink-300 via-rose-300 to-peach-300 block sm:inline font-normal mt-1 sm:mt-0">
-            For You ♡
+          <span className="font-script text-5xl sm:text-7xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-dustypink-300 via-rose-300 to-peach-300 inline font-normal">
+            For You{' '}
+          </span>
+          <span className="font-sans text-rose-400 not-italic inline-block text-4xl sm:text-6xl md:text-7xl align-baseline drop-shadow-[0_0_15px_rgba(244,114,182,0.9)]">
+            ♡
           </span>
         </motion.h1>
 

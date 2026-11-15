@@ -294,7 +294,7 @@ export const DateBookingInterface = ({ initialActivity = 'Sunset Walk', onReset 
           </div>
 
           <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2">
-            So... shall we make this happen? <span className="text-dustypink-400 font-script text-4xl sm:text-5xl">♡</span>
+            So... shall we make this happen? <span className="text-rose-400 font-sans not-italic text-3xl sm:text-4xl inline-block drop-shadow-[0_0_12px_rgba(244,114,182,0.9)]">♡</span>
           </h3>
 
           <p className="font-light text-stone-300 text-sm sm:text-base max-w-lg mx-auto">

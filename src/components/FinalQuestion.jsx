@@ -70,7 +70,7 @@ export const FinalQuestion = ({ initialActivity = 'Sunset Walk' }) => {
           className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-6 drop-shadow-[0_0_25px_rgba(244,114,182,0.4)]"
         >
           Would you go on a date with me?{' '}
-          <span className="text-dustypink-400 font-script text-5xl sm:text-7xl md:text-8xl block sm:inline">
+          <span className="text-rose-400 font-sans not-italic text-4xl sm:text-6xl md:text-7xl inline-block drop-shadow-[0_0_15px_rgba(244,114,182,0.9)]">
             ♡
           </span>
         </motion.h2>
